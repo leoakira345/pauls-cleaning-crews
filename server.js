@@ -84,7 +84,7 @@ const Comment = mongoose.model('Comment', commentSchema);
 const Booking = mongoose.model('Booking', bookingSchema);
 
 // Client Model Import from public (adjust filename if needed)
-const Client = require(path.join(__dirname, 'public', 'Client.js')); // make sure public/Client.js exports the Mongoose model
+const Client = require(path.join(__dirname, 'public', 'models', 'Client.js'));
 
 // Admin Credentials (FOR DEMONSTRATION PURPOSES ONLY - In a real app, use hashed passwords and JWTs/sessions)
 const ADMIN_USERNAME = 'AdminPauls';
